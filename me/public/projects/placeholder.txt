@@ -1,0 +1,6 @@
+Place your project screenshots/images in this directory with the following names:
+- ecommerce.jpg
+- taskapp.jpg
+- portfolio.jpg
+
+Recommended image dimensions: 1280x720px or 16:9 aspect ratio
