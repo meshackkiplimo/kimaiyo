@@ -4,7 +4,7 @@
     <nav class="fixed top-0 z-50 w-full bg-white/80 backdrop-blur dark:bg-gray-900/80">
       <div class="container flex h-16 items-center justify-between">
         <NuxtLink to="/" class="text-xl font-bold text-gray-900 dark:text-white">
-          Portfolio
+          Meshack Kimaiyo
         </NuxtLink>
         <div class="flex items-center gap-6">
           <NuxtLink
