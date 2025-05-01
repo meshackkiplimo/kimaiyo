@@ -140,11 +140,11 @@ const featuredProjects: Project[] = [
     demoUrl: 'https://fanya-theta.vercel.app/'
   },
   {
-    title: 'Gateway - Hospital Management System',
-    description: 'A comprehensive hospital management system for streamlining patient care, appointments, and medical records management.',
-    image: '/img/gateway.JPG',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Healthcare'],
-    demoUrl: 'https://gateway-steel-six.vercel.app/'
+    title: 'Azura - E-commerce Platform',
+    description: 'A modern e-commerce platform with features like product management, shopping cart, and secure payment integration.',
+    image: '/img/azura.JPG',
+    technologies: ['React', 'Node.js', 'MongoDB', 'E-commerce'],
+    demoUrl: 'https://azura-zeta.vercel.app/'
   }
 ]
 
