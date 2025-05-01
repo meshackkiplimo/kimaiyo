@@ -13,14 +13,12 @@
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <NuxtLink
               to="/projects"
-              class="btn btn-primary"
-            >
+              class="btn btn-primary">
               View My Work
             </NuxtLink>
             <NuxtLink
               to="/contact"
-              class="text-sm font-semibold leading-6 text-white"
-            >
+              class="text-sm font-semibold leading-6 text-white">
               Contact Me <span aria-hidden="true">→</span>
             </NuxtLink>
           </div>
@@ -38,20 +36,43 @@
             Check out some of my recent work
           </p>
         </div>
-        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div v-for="project in featuredProjects" :key="project.title" 
-               class="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:-translate-y-1 dark:bg-gray-800">
+        <div class="mt-16 grid gap-8 sm:grid-cols-2">
+          <div
+            v-for="project in featuredProjects"
+            :key="project.title"
+            class="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:-translate-y-1 dark:bg-gray-800">
             <div class="aspect-h-9 aspect-w-16 overflow-hidden">
-              <img :src="project.image" :alt="project.title" class="object-cover" />
+              <NuxtImg
+                :src="project.image"
+                :alt="project.title"
+                class="object-cover transition-transform duration-300 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/75 to-transparent"></div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ project.title }}</h3>
               <p class="mt-2 text-gray-600 dark:text-gray-400">{{ project.description }}</p>
               <div class="mt-4 flex flex-wrap gap-2">
-                <span v-for="tech in project.technologies" :key="tech"
-                      class="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                <span
+                  v-for="tech in project.technologies"
+                  :key="tech"
+                  class="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-800 dark:bg-gray-700 dark:text-gray-300">
                   {{ tech }}
                 </span>
+              </div>
+              <div class="mt-6 flex gap-4">
+                <a
+                  v-if="project.demoUrl"
+                  :href="project.demoUrl"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary flex-1">
+                  Live Demo
+                </a>
+                <NuxtLink
+                  to="/projects"
+                  class="flex items-center justify-center text-sm font-semibold text-primary-600 dark:text-primary-400">
+                  Learn more <span aria-hidden="true" class="ml-1">→</span>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -69,14 +90,18 @@
           </p>
         </div>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div v-for="category in skills" :key="category.name" 
-               class="rounded-xl bg-white p-6 shadow-lg dark:bg-gray-800">
+          <div
+            v-for="category in skills"
+            :key="category.name"
+            class="rounded-xl bg-white p-6 shadow-lg dark:bg-gray-800">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               {{ category.name }}
             </h3>
             <div class="mt-4 flex flex-wrap gap-2">
-              <span v-for="skill in category.items" :key="skill"
-                    class="rounded-full bg-primary-100 px-3 py-1 text-sm text-primary-800 dark:bg-primary-900/20 dark:text-primary-300">
+              <span
+                v-for="skill in category.items"
+                :key="skill"
+                class="rounded-full bg-primary-100 px-3 py-1 text-sm text-primary-800 dark:bg-primary-900/20 dark:text-primary-300">
                 {{ skill }}
               </span>
             </div>
@@ -93,6 +118,7 @@ interface Project {
   description: string
   image: string
   technologies: string[]
+  demoUrl?: string
 }
 
 interface SkillCategory {
@@ -102,23 +128,19 @@ interface SkillCategory {
 
 const featuredProjects: Project[] = [
   {
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce platform with real-time inventory management',
-    image: '/projects/ecommerce.jpg',
-    technologies: ['Vue.js', 'Node.js', 'MongoDB'],
+    title: 'Kuuku - Chicken Management System',
+    description: 'A comprehensive farm management system designed specifically for poultry farmers, helping them track chicken health, production, and inventory.',
+    image: '/img/kuuku.JPG',
+    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Farm Management'],
+    demoUrl: 'https://fanya-theta.vercel.app/'
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates',
-    image: '/projects/taskapp.jpg',
-    technologies: ['React', 'Express', 'Socket.io'],
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'A responsive portfolio website built with modern technologies',
-    image: '/projects/portfolio.jpg',
-    technologies: ['Nuxt.js', 'TailwindCSS', 'TypeScript'],
-  },
+    title: 'Gateway - Hospital Management System',
+    description: 'A comprehensive hospital management system for streamlining patient care, appointments, and medical records management.',
+    image: '/img/gateway.JPG',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Healthcare'],
+    demoUrl: 'https://gateway-steel-six.vercel.app/'
+  }
 ]
 
 const skills: SkillCategory[] = [
