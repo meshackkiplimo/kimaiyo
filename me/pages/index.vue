@@ -3,24 +3,29 @@
     <!-- Hero Section -->
     <section class="relative overflow-hidden bg-gray-900 py-32">
       <div class="container relative z-10">
-        <div class="mx-auto max-w-2xl text-center">
-          <h1 class="animate-fade-in text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Full Stack Developer
-          </h1>
-          <p class="animate-slide-up mt-6 text-lg leading-8 text-gray-300">
-            Building innovative web solutions with modern technologies
-          </p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <NuxtLink
-              to="/projects"
-              class="btn btn-primary">
-              View My Work
-            </NuxtLink>
-            <NuxtLink
-              to="/contact"
-              class="text-sm font-semibold leading-6 text-white">
-              Contact Me <span aria-hidden="true">→</span>
-            </NuxtLink>
+        <div class="mx-auto max-w-4xl flex flex-col-reverse md:flex-row items-center gap-12">
+          <div class="flex-1 text-center md:text-left">
+            <h1 class="animate-fade-in text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              Full Stack Developer
+            </h1>
+            <p class="animate-slide-up mt-6 text-lg leading-8 text-gray-300">
+              Building innovative web solutions with modern technologies
+            </p>
+            <div class="mt-10 flex items-center justify-center md:justify-start gap-x-6">
+              <NuxtLink
+                to="/projects"
+                class="btn btn-primary">
+                View My Work
+              </NuxtLink>
+              <NuxtLink
+                to="/contact"
+                class="text-sm font-semibold leading-6 text-white">
+                Contact Me <span aria-hidden="true">→</span>
+              </NuxtLink>
+            </div>
+          </div>
+          <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary-500 shadow-xl">
+            <img src="/img/mesh.jpg" alt="Profile Picture" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>

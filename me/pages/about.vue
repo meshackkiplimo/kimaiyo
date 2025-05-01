@@ -3,22 +3,29 @@
     <!-- Bio Section -->
     <section class="section">
       <div class="container">
-        <div class="mx-auto max-w-3xl">
+        <div class="mx-auto max-w-4xl">
           <h1 class="heading text-center">About Me</h1>
-          <div class="mt-8 space-y-6 text-lg text-gray-600 dark:text-gray-400">
-            <p>
-              Hi! I'm a passionate Full Stack Developer with a strong foundation in modern web technologies. 
-              I specialize in building scalable web applications and creating exceptional user experiences.
-            </p>
-            <p>
-              With several years of experience in software development, I've worked on various projects 
-              ranging from e-commerce platforms to real-time collaboration tools. I'm constantly learning 
-              and staying up-to-date with the latest technologies and best practices.
-            </p>
-            <p>
-              When I'm not coding, you can find me contributing to open-source projects, writing technical 
-              blog posts, or mentoring aspiring developers.
-            </p>
+          <div class="mt-12 flex flex-col md:flex-row gap-12 items-start">
+            <div class="md:w-1/3 mx-auto">
+              <div class="w-60 h-72 rounded-lg overflow-hidden shadow-xl">
+                <img src="/img/image 2.jpg" alt="Professional Photo" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div class="md:w-2/3 space-y-6 text-lg text-gray-600 dark:text-gray-400">
+              <p>
+                Hi! I'm a passionate Full Stack Developer with a strong foundation in modern web technologies. 
+                I specialize in building scalable web applications and creating exceptional user experiences.
+              </p>
+              <p>
+                With several years of experience in software development, I've worked on various projects 
+                ranging from e-commerce platforms to real-time collaboration tools. I'm constantly learning 
+                and staying up-to-date with the latest technologies and best practices.
+              </p>
+              <p>
+                When I'm not coding, you can find me contributing to open-source projects, writing technical 
+                blog posts, or mentoring aspiring developers.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -86,49 +93,43 @@
 <script setup lang="ts">
 const experiences = [
   {
-    role: 'Senior Full Stack Developer',
-    company: 'Tech Solutions Inc.',
-    period: '2021 - Present',
+    role: 'Software Engineering Intern',
+    company: 'Teach2Give',
+    period: 'May 2025 - Present',
     achievements: [
-      'Led development of microservices-based architecture, improving system scalability by 300%',
-      'Mentored junior developers and established coding standards',
-      'Implemented CI/CD pipeline reducing deployment time by 60%',
+      'Currently participating in software engineering internship program',
+      'Working on practical software development projects',
+      'Learning and implementing modern development practices',
     ],
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Digital Innovations',
-    period: '2019 - 2021',
+    role: 'Software Developer (Part-time)',
+    company: 'Momi Foundation',
+    period: 'October 2024 - Present',
     achievements: [
-      'Developed and maintained multiple client projects using Vue.js and Node.js',
-      'Optimized database queries resulting in 40% faster load times',
-      'Implemented real-time features using WebSocket technology',
+      'Developing and maintaining foundation software systems',
+      'Contributing to various software development projects',
+      'Working collaboratively in a part-time capacity',
     ],
   },
   {
-    role: 'Frontend Developer',
-    company: 'Web Creators Co.',
-    period: '2017 - 2019',
+    role: 'Software Engineering Intern',
+    company: 'Taquana',
+    period: 'May 2024 - August 2024',
     achievements: [
-      'Built responsive web applications using React and Redux',
-      'Collaborated with UX team to implement pixel-perfect designs',
-      'Reduced bundle size by 45% through code splitting and lazy loading',
+      'Completed summer internship program',
+      'Gained practical experience in software development',
+      'Contributed to company projects and initiatives',
     ],
   },
 ]
 
 const educationList = [
   {
-    degree: 'Master of Science in Computer Science',
-    school: 'Tech University',
-    period: '2015 - 2017',
-    description: 'Specialized in Software Engineering and Distributed Systems. Graduated with honors.',
-  },
-  {
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'State University',
-    period: '2011 - 2015',
-    description: 'Focus on Web Development and Database Management. Dean\'s List recipient.',
-  },
+    degree: 'Bachelor of Science in Software Engineering',
+    school: 'University of Eastern Africa Baraton',
+    period: '2021 - 2025',
+    description: 'Specializing in software development and engineering principles.',
+  }
 ]
 </script>
