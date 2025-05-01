@@ -45,7 +45,7 @@
 
         <button
           @click="mobileMenuOpen = !mobileMenuOpen"
-          class="rounded-md p-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+          class="md:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
         >
           <span class="sr-only">Open menu</span>
           <svg 
