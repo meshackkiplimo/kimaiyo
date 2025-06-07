@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="heading text-center">Featured Projects</h1>
         <p class="mt-4 text-center text-lg text-gray-600 dark:text-gray-400">
-          Highlighting my most impactful work
+          Highlighting my continuing projects
         </p>
 
         <!-- Featured Projects -->
