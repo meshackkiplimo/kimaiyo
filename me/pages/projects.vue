@@ -138,11 +138,11 @@ const selectedTags = ref<string[]>([])
 
 const projects: Project[] = [
   {
-    title: 'Kuuku - Chicken Management System',
+    title: 'Kuku - Chicken Management System',
     description: 'A comprehensive farm management system designed specifically for poultry farmers, helping them track chicken health, production, and inventory.',
     image: '/img/kuuku.JPG',
     technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Farm Management'],
-    demoUrl: 'https://fanya-theta.vercel.app/',
+    demoUrl: 'https://kuku-f.vercel.app/',
     featured: true
   },
   {
